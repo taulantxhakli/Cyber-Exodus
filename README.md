@@ -1,2 +1,2 @@
 # Cyber-Exodus
-Senior Project
+Project
