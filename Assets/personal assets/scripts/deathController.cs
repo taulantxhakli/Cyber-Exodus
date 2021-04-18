@@ -17,14 +17,14 @@ namespace MikeNspired.UnityXRHandPoser {
         void Start()
         {
             setRigidbodyState(true);
-            setColliderState(false);
+            setColliderState(true);
         }
 
-        public void die(float damage, GameObject damager) {
+        public void TakeDamage(float damage, GameObject damager) {
             onHit.Invoke(damage);
             GetComponent<Animator>().enabled = false;
             setRigidbodyState(false);
-            setColliderState(true);
+            setColliderState(false);
 
             Destroy(gameObject, 3f); // remove npc from scene after 3s
         }

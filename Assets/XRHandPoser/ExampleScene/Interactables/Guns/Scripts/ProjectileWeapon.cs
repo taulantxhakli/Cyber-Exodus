@@ -1,6 +1,4 @@
-﻿// Copyright (c) MikeNspired. All Rights Reserved.
-
-using System;
+﻿using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -31,7 +29,7 @@ namespace MikeNspired.UnityXRHandPoser
         public float bulletSpeed = 150;
         public bool infiniteAmmo = false;
         public float hapticDuration = .1f;
-        public float hapticStrength = .5f;
+        public float hapticStrength = .2f;
         private XRBaseInteractor controller;
 
         public UnityEvent BulletFiredEvent;

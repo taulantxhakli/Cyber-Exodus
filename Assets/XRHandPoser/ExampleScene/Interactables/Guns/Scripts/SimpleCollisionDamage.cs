@@ -1,6 +1,4 @@
-﻿// Copyright (c) MikeNspired. All Rights Reserved.
-
-using System;
+﻿using System;
 using UnityEngine;
 
 namespace MikeNspired.UnityXRHandPoser
