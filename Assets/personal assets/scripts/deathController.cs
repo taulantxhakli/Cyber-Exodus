@@ -10,23 +10,28 @@ namespace MikeNspired.UnityXRHandPoser {
 
     public class deathController : MonoBehaviour
     {
+
+
         public GameObject Mesh;
+        public GameObject bullet;
         public UnityEventFloat onHit;
         
-        // Start is called before the first frame update
-        void Start()
+
+        void Awake()
         {
             setRigidbodyState(true);
             setColliderState(true);
         }
 
-        public void TakeDamage(float damage, GameObject damager) {
-            onHit.Invoke(damage);
-            GetComponent<Animator>().enabled = false;
-            setRigidbodyState(false);
-            setColliderState(false);
+        public void OnCollisionEnter(Collision collision) {
+            if (bullet != null && bullet.gameObject.tag == "guy") {
+                Debug.Log("shot was registered. " + bullet);
+                GetComponent<Animator>().enabled = false;
+                setRigidbodyState(false);
+                setColliderState(false);
 
-            Destroy(gameObject, 3f); // remove npc from scene after 3s
+                Destroy(gameObject, 3f); // remove npc from scene after 3s
+            }
         }
 
         void setRigidbodyState(bool state) {

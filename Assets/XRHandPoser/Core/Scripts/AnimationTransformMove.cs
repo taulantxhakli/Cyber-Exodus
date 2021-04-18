@@ -1,4 +1,4 @@
-﻿// Copyright (c) MikeNspired. All Rights Reserved.
+﻿
 using System;
 using UnityEngine;
 using UnityEngine.XR;
