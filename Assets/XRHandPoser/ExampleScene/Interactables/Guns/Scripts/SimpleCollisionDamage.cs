@@ -10,7 +10,7 @@ namespace MikeNspired.UnityXRHandPoser
         [SerializeField] private GameObject fleshDecal = null;
         [SerializeField] private GameObject woodDecal = null;
         [SerializeField] private bool destroyOnCollision = true, triggerDamage = false;
-        
+
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.rigidbody?.GetComponent<SimpleCollisionDamage>()) return;
@@ -26,9 +26,9 @@ namespace MikeNspired.UnityXRHandPoser
         private void OnTriggerEnter(Collider other)
         {
             if (!triggerDamage) return;
-            
+
             other.transform.GetComponentInParent<IDamageable>()?.TakeDamage(damage, gameObject);
-            
+
             if (destroyOnCollision)
                 Destroy(this.gameObject);
         }
@@ -63,8 +63,19 @@ namespace MikeNspired.UnityXRHandPoser
                 SpawnDecal(collision, metalDecal);
         }
 
+        // Mike Addition
+        //void KillEnemy(Collision hit, GameObject death)
+        //{
+         //   death.GetComponent<deathController>().OnCollisionEnter();
+         //
+        //    if (guy != null)
+         //   {
+         //       guy.OnCollisionEnter();
+         //   }
+        //}
 
-        void SpawnDecal(Collision hit, GameObject decalPrefab)
+
+    void SpawnDecal(Collision hit, GameObject decalPrefab)
         {
             if (!decalPrefab) return;
             ContactPoint contact = hit.contacts[0];
