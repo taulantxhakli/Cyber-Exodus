@@ -6,6 +6,7 @@ TagManager:
   tags:
   - projectile
   - guy
+  - enemy
   layers:
   - Default
   - TransparentFX

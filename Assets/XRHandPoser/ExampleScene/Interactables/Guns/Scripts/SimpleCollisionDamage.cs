@@ -21,6 +21,13 @@ namespace MikeNspired.UnityXRHandPoser
 
             if (destroyOnCollision)
                 Destroy(this.gameObject);
+
+            // Kill enemy when shot 
+            if (collision.transform.tag == "enemy")
+            {
+                Destroy(collision.gameObject, 3f);
+            }
+
         }
 
         private void OnTriggerEnter(Collider other)
