@@ -25,6 +25,8 @@ namespace MikeNspired.UnityXRHandPoser
             // Kill enemy when shot 
             if (collision.transform.tag == "enemy")
             {
+                Debug.Log("shot was registered. ");
+                GetComponent<Animator>().enabled = false;
                 Destroy(collision.gameObject, 3f);
             }
 
