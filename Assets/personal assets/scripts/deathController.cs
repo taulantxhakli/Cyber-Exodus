@@ -11,7 +11,6 @@ namespace MikeNspired.UnityXRHandPoser {
     public class deathController : MonoBehaviour
     {
 
-
         public GameObject Mesh;
         public GameObject bullet;
         public UnityEventFloat onHit;
@@ -24,7 +23,7 @@ namespace MikeNspired.UnityXRHandPoser {
         }
 
         public void OnCollisionEnter(Collision collision) {
-            if (bullet != null && bullet.gameObject.tag == "guy") {
+            if (bullet != null && bullet.gameObject.tag == "enemy") {
                 Debug.Log("shot was registered. " + bullet);
                 GetComponent<Animator>().enabled = false;
                 setRigidbodyState(false);
