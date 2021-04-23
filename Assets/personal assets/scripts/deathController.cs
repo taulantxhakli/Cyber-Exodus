@@ -13,6 +13,7 @@ namespace MikeNspired.UnityXRHandPoser {
 
         public GameObject Mesh;
         public GameObject bullet;
+        public GameObject NPC;
         public UnityEventFloat onHit;
         
 
@@ -23,13 +24,14 @@ namespace MikeNspired.UnityXRHandPoser {
         }
 
         public void OnCollisionEnter(Collision collision) {
-            if (bullet != null && bullet.gameObject.tag == "enemy") {
+           // if (bullet != null && bullet.gameObject.tag == "enemy") { 
+            if (collision.transform.tag == "bullet") {
                 Debug.Log("shot was registered. " + bullet);
                 GetComponent<Animator>().enabled = false;
                 setRigidbodyState(false);
                 setColliderState(false);
 
-                Destroy(gameObject, 3f); // remove npc from scene after 3s
+                Destroy(NPC, 3f); // remove npc from scene after 3s
             }
         }
 
