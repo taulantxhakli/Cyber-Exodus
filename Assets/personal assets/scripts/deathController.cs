@@ -29,7 +29,7 @@ namespace MikeNspired.UnityXRHandPoser {
                 Debug.Log("shot was registered. " + bullet);
                 GetComponent<Animator>().enabled = false;
                 setRigidbodyState(false);
-                setColliderState(false);
+                //setColliderState(true);
 
                 Destroy(NPC, 3f); // remove npc from scene after 3s
             }
