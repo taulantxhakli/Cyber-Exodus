@@ -4,6 +4,7 @@
   * [Description](#description)
   * [Table](#table)
   * [Sneak-Peek](#sneak-peek)
+  * [Soundtrack](#soundtrack)
   * [Contributing](#contributing)
   * [Questions?](#questions) 
   
@@ -40,6 +41,9 @@ As for the project itself, it consists of two scenes, one of which is the menu s
   
   ![Alt Text](take_3.gif)
 
+
+  ## Soundtrack
+  [Cyber Exodus OST.zip](https://github.com/taulantxhakli/Cyber-Exodus/files/6517195/Cyber.Exodus.OST.zip)
   
   ## Contributing
   
