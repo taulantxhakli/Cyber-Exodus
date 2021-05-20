@@ -33,13 +33,7 @@ As for the project itself, it consists of two scenes, one of which is the menu s
 
   
   ## Sneak-Peek
-  // get images and video later
- 
-  ![Alt Text](take_1.gif)
-  
-  ![Alt Text](take_2.gif)
-  
-  ![Alt Text](take_3.gif)
+  https://www.youtube.com/watch?v=_aJjpnDpzRk&ab_channel=degenexpress
 
 
   ## Soundtrack
