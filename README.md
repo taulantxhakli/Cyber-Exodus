@@ -52,7 +52,3 @@ As for the project itself, it consists of two scenes, one of which is the menu s
   For any questions, please contact me with the information below:
  
   Email: txhakli@gmail.com
-  
-  For just chatting and getting to know me on an unprofessional level:
-  
-  Discord: taulant#1999
